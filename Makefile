@@ -12,4 +12,4 @@ problem_2: problem_2.c
 
 clean:
 	-rm -f core
-	-rm -f problem_1 problem_1
+	-rm -f problem_1 problem_2
