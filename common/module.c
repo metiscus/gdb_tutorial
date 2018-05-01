@@ -20,9 +20,9 @@ void module_crash_1()
 
 static void module_crash_2a ()
 {
-        int *pointer = 0;
+    int *pointer = 0;
 
-        printf("The number is: %d\n", *pointer);
+    printf("The number is: %d\n", *pointer);
 }
 
 static void module_crash_2b ()
