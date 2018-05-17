@@ -12,6 +12,8 @@ module.so: common/module.c
 	$(CC) -fPIC -shared -O3 $(CFLAGS) -o module.so common/module.c
 	strip --strip-all module.so
 
+# Building a debug friendly version of the module, this is nice for when
+# you need to ship code to customers but would like to be able to read crash dumps later
 module_dbg.so: common/module.c
 	$(CC) -fPIC -shared -O3 $(CFLAGS) -o module_dbg.so common/module.c
 	objcopy --only-keep-debug module_dbg.so module_dbg.so.debug
